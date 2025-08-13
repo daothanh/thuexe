@@ -24,7 +24,7 @@ export default defineConfig(({mode}) => ({
         'vue-router',
         'pinia',
       ],
-      dts: 'types/auto-imports.d.ts',
+      dts: 'auto-imports.d.ts',
       dirs: ['src/stores', 'src/composables', 'src/types'],
     }),
     // Compression plugin for production builds
@@ -47,9 +47,9 @@ export default defineConfig(({mode}) => ({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  esbuild: {
+  /*esbuild: {
     drop: ['console', 'debugger'],
-  },
+  },*/
   build: {
     chunkSizeWarningLimit: 1000,
     sourcemap: false,
